@@ -18,7 +18,7 @@ export default function Navbar() {
         <header className="mb-8 border-b">
             <div className="flex items-center justify-between mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl">
                 <Link href={"/"}>
-                    <h1 className="text-2xl md:text-4xl font-bold">Khadidjah's <span className="text-primary">Incense</span></h1>
+                    <h1 className="text-2xl md:text-4xl font-bold">Khadidjah&#39;s <span className="text-primary">Incense</span></h1>
                 </Link>
                 <nav className="hidden gap-12 lg:flex 2xl:ml-16">
                     {links.map((link, idx) => (

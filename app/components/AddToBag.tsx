@@ -3,13 +3,15 @@
 import { Button } from "@/components/ui/button";
 import { useShoppingCart } from "use-shopping-cart";
 import { urlFor } from "../lib/sanity";
+import { SanityImageSource } from "@sanity/image-url/lib/types/types";
+
 
 export interface ProductCart {
   name: string;
   description: string;
   price: number;
   currency: string;
-  image: any;
+  image: SanityImageSource;
   price_id: string;
 }
 
@@ -34,7 +36,8 @@ export default function AddToBag({
   return (
     <Button
       onClick={() => {
-        addItem(product), handleCartClick();
+        addItem(product);
+        handleCartClick();
       }}
     >
       Add To Cart
